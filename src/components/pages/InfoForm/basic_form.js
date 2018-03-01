@@ -15,10 +15,12 @@ class ExampleForm1 extends React.Component {
 
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
+    this.setState({value: ''});
     event.preventDefault();
   }
 
   render() {
+    console.log("render", this.state);
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
@@ -26,8 +28,7 @@ class ExampleForm1 extends React.Component {
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" />
-        // [@TODO] Create a mobile field - show input on alert - add validation if mobile
-        // not in format - show error msg and disable submit.
+
       </form>
     );
   }

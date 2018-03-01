@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ExampleForm1 from './InfoForm/basic';
+import ExampleForm1 from './InfoForm/basic_form';
 
 
 
@@ -8,16 +8,12 @@ import ExampleForm1 from './InfoForm/basic';
 class Homepage extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid" >
+
       <ExampleForm1 />
 
 
-      <h1>
-        Home page here
-        </h1>
-        <p>
-        Blah Blah
-        </p>
+
       </div>
     );
   }
